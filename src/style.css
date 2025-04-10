@@ -8,5 +8,47 @@ body {
   width: 100%;
   height: 100%;
   background: black;
-  
+}
+.masked {
+  position: relative;
+  background: url("") no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  colour: transparent;
+  background-size: cover;
+}
+.masked::before {
+ 
+  content: "macbook pro. ";
+  position: absolute;
+  top: 0%;
+  left: 24%;
+  width: 100%;
+  height: 100%;
+  background: url("") no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  colour: transparent;
+  background-size: cover;
+  filter: blur(40px);
+  opacity: 0.8;
+}
+.masked::after{
+  content: "macbook pro. ";
+  position: absolute;
+  top: 0%;
+  left: 24%;
+  width: 100%;
+  height: 100%;
+  background: url("") no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  colour: transparent;
+  background-size: cover;
+  filter: blur(20px);
+  opacity: 0.8;
+}
+.line{
+  border-bottom: 0.4px solid  #333;
+  padding-bottom: 5px;
 }
